@@ -7,6 +7,12 @@ const ProgressBar=({file,setFile})=>{
 
   const {url,progress}=useStorage(file)
  
+  useEffect(()=>{
+    if(url)
+    {
+      setFile(null)
+    }
+  },[url])
   
     return (
 
@@ -14,7 +20,7 @@ const ProgressBar=({file,setFile})=>{
 
 <div>
 <div className='container'>
-<div className="progress-bar progress-bar-striped bg-primary" style={{width:progress+'%',height:'25px',marginTop:'10px'}}>{progress}%</div>
+<div className="progress-bar progress-bar-striped progress-bar-animated bg-primary" style={{width:progress+'%',height:'25px',marginTop:'10px'}}>{progress}%</div>
 </div>
        
 </div>
