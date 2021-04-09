@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+
+.progressbar{
+  height:5px;
+  border-radius: 10px;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-grid{
+  
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  grid-gap: 20px;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imgindividual{
+  
+  
+  margin-left: 120px;
+}
+.imgindividual img{
+  opacity:0.9;
+}
+.imgindividual img:hover{
+  opacity:1;
+}
+.imgindividual img{
+  box-shadow: 2px 2px 2px whitesmoke,4px 4px 4px whitesmoke.,-2px -2px 2px whitesmoke,-4px -4px 4px whitesmoke;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.sty{
+  padding: 5px;
+  background:whitesmoke;
+  width:350px;
+  border:none;
+  outline: none;
+ 
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+::-webkit-textfield-decoration-container{
+color:red;
+}
+::-webkit-file-upload-button{
+  background: white;
+  height:20px;
+  
+  height:2%;
+  outline: none;
+  border: none;
+  color:black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  color:dodgerblue;
+}
+label{
+  font-size: 25px;
+
+
+}
+span{
+  color:mediumspringgreen;
+}
+.container{
+
+  width:800px;
+  height:25px;
 }

@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import UploadForm from './components/UploadForm'
+import PropTypes from 'prop-types'
+import Imagegrid from './components/Imagegrid';
+
+//import ProgressBar from './components/ProgressBar'
+//import bootstrap from '../node_modules/bootstrap/dist/boostrap.min.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+<>
+
+
+<center>
+  <h1>ImageGallery</h1>
+</center>
+<UploadForm/>
+<Imagegrid/>
+</>
+
+      );
 }
 
 export default App;
